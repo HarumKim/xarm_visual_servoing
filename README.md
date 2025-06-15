@@ -16,3 +16,13 @@ The system includes:
 - Azure Kinect DK + [azure_kinect_ros2_driver](https://github.com/ckennedy2050/Azure_Kinect_ROS2_Driver)
 - UFactory xArm 6 + [xarm_ros2](https://github.com/xArm-Developer/xarm_ros2)
 - Libraries: Open3D, NumPy, OpenCV
+
+## 📁 Reference Model: Oil Pan
+You must include a reference .ply model of the object to perform registration.
+
+Store your file in the oil_pan/ directory
+
+Example: oil_pan_top.ply
+
+You can generate .ply models using photogrammetry tools or download scanned versions
+
