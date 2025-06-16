@@ -23,17 +23,23 @@ You must include a reference .ply model of the object to perform registration.
 - Example: oil_pan_top.ply
 - You can generate .ply models using photogrammetry tools or download scanned versions
 
-🚀 How to Launch the System
+## 🚀 How to Launch the System
 
 1. Launch the Azure Kinect sensor:
+```bash
 ros2 run azure_kinect_ros2_driver azure_kinect_node
+```
 
 2. Connect to the xArm
 Replace the IP with your arm's actual IP address (e.g., 192.168.1.208):
+```bash
 ros2 launch xarm_moveit_config xarm6_moveit_realmove.launch.py robot_ip:=192.168.1.208 [add_gripper:=true]
+```
 
 3. Run the Main Pipeline (Segmentation + Pose Estimation + Robot Control)
+```bash
 ros2 launch xarm_vision segmentation_point_cloud.launch.py
+```
 
 4. (Optional) Launch RViz for Visualization
 
