@@ -19,10 +19,22 @@ The system includes:
 
 ## 📁 Reference Model: Oil Pan
 You must include a reference .ply model of the object to perform registration.
+- Store your file in the oil_pan/ directory
+- Example: oil_pan_top.ply
+- You can generate .ply models using photogrammetry tools or download scanned versions
 
-Store your file in the oil_pan/ directory
+🚀 How to Launch the System
 
-Example: oil_pan_top.ply
+1. Launch the Azure Kinect sensor:
+ros2 run azure_kinect_ros2_driver azure_kinect_node
 
-You can generate .ply models using photogrammetry tools or download scanned versions
+2. Connect to the xArm
+Replace the IP with your arm's actual IP address (e.g., 192.168.1.208):
+ros2 launch xarm_moveit_config xarm6_moveit_realmove.launch.py robot_ip:=192.168.1.208 [add_gripper:=true]
+
+3. Run the Main Pipeline (Segmentation + Pose Estimation + Robot Control)
+ros2 launch xarm_vision segmentation_point_cloud.launch.py
+
+4. (Optional) Launch RViz for Visualization
+
 
