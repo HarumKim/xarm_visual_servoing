@@ -43,4 +43,17 @@ ros2 launch xarm_vision segmentation_point_cloud.launch.py
 
 4. (Optional) Launch RViz for Visualization
 
+## 🎥 Videos
+
+The following videos demonstrate the system’s performance from different perspectives:
+
+- **System Demonstration Video**  
+  Shows the full visual servoing pipeline in action, including detection, pose estimation, and xArm motion.  
+  🔗 [Watch Demonstration](https://drive.google.com/file/d/12KXFd9y9SNcoWi6ijT-OAGYlVdQEtBXU/view)
+
+- **Screen Recording (Pipeline & Visualization)**  
+  Shows the internal processing, point cloud registration, and ROS visualization during execution.  
+  🔗 [Watch Screen Recording](https://tecmx-my.sharepoint.com/:v:/r/personal/a00836962_tec_mx/Documents/TEC/6to%20SEMESTRE/TE2003B/Modulo%202%20y%203/Visual%20Servoing%20xARM.webm?csf=1&web=1&e=DncX5g&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+  
 
